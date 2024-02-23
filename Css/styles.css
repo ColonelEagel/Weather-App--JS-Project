@@ -33,15 +33,6 @@ html {
     scroll-behavior: smooth;
 }
 
-a {
-    text-decoration: none;
-    background-color: transparent;
-    color: black;
-}
-
-ul {
-    list-style: none;
-}
 
 img {
     object-fit: cover;
@@ -129,89 +120,11 @@ h1.section-title {
 
 /*__________________________________The End Of Media quarry __________________________________*/
 
-/*__________________________________ Start Header __________________________________*/
 
-#header {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
-}
-
-#header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    position: relative;
-    padding: 15px;
-}
-
-
-
-#nav-bar a {
-    margin: 0 15px;
-    color: var(--main-color);
-
-}
-
-#nav-bar a:hover {
-    color: var(--second-color-hover);
-}
-
-#nav-bar a:active {
-    color: var(--second-color);
-}
-
-.menu {
-    list-style: none;
-    /* Remove default list styling */
-    padding: 0;
-    display: flex;
-}
 
 /*__________________________________ End Header __________________________________*/
 
 /*__________________________________ Start Form __________________________________*/
-.form-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 15px;
-
-}
-
-
-#submit {
-    padding: 5px;
-    border: 1px solid #e01b84;
-    background-color: var(--second-color);
-    color: var(--Font-Color);
-    transition: background-color .5s;
-    font-weight: bold;
-}
-
-label {
-    font-weight: bold;
-}
-
-#email {
-    padding: 9px;
-    border: 1px solid #e01b84;
-    transition: background-color .5s;
-    color: var(--Font-Color2);
-}
-
-#submit:hover {
-    background-color: var(--second-color-hover);
-    outline: none;
-    cursor: pointer;
-}
-
-/*__________________________________ End Header __________________________________*/
 #weather-section {
     position: relative;
     display: flex;
@@ -244,9 +157,7 @@ label {
 
 .search-box {
     position: relative;
-    /* top: 50%; */
-    /* left: 50%; */
-    /* transform: translate(-50%, -50%); */
+
     height: 55px;
     border-radius: 40px;
     padding: 20px;
@@ -325,7 +236,6 @@ label {
     font-weight: 700;
     font-size: 64px;
     margin: 20px 0 6px -30px;
-    /* background-color: var(--transparent-color); */
     border-radius: 16px;
     padding: 20px;
 }

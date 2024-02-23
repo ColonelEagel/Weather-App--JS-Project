@@ -23,10 +23,7 @@ body {
     background-position: center;
     background-attachment: fixed;
     color: var(--Font-Color);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+
 }
 
 html {
@@ -43,6 +40,12 @@ img {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
     padding: 20px;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    padding: 35px 20px;
 }
 
 .fade-in {
@@ -96,29 +99,7 @@ h1.section-title {
 
 /*__________________________________End Global rules __________________________________*/
 
-/*__________________________________The Start Of Media quarry __________________________________*/
-/*__________________________________Small __________________________________*/
-@media (min-width: 768px) {
-    .container {
-        width: 750px;
-    }
-}
 
-/*__________________________________MEdium __________________________________*/
-@media (min-width: 992px) {
-    .container {
-        width: 970px;
-    }
-}
-
-/*__________________________________Large  __________________________________*/
-@media (min-width: 1200px) {
-    .container {
-        width: 1170px;
-    }
-}
-
-/*__________________________________The End Of Media quarry __________________________________*/
 
 
 
@@ -127,23 +108,17 @@ h1.section-title {
 /*__________________________________ Start Form __________________________________*/
 #weather-section {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     min-height: 100vh;
 }
 
-.container {
-    position: relative;
-    width: 400px;
-    margin: 0 auto;
-    padding: 35px 20px;
-}
 
-.container.weather-container {
+
+.weather-container {
     background-color: aqua;
     display: flex;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 35px 20px;
     flex-direction: column;
     align-items: center;
     background: rgba(255, 255, 255, 0.2);
@@ -157,7 +132,6 @@ h1.section-title {
 
 .search-box {
     position: relative;
-
     height: 55px;
     border-radius: 40px;
     padding: 20px;
@@ -192,7 +166,6 @@ h1.section-title {
     border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 40px;
     transition: .5s;
-
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -261,9 +234,13 @@ h1.section-title {
     gap: 10px;
 }
 
+.weather-details .text {
+    text-align: center;
+    text-wrap: nowrap;
+}
 
 .weather-details i {
-    font-size: 65px;
+    font-size: 40px;
 }
 
 .weather-details span {
@@ -299,3 +276,43 @@ footer {
 }
 
 /* __________________________________ End footer __________________________________ --> */
+
+/*__________________________________The Start Of Media quarry __________________________________*/
+/*__________________________________Small __________________________________*/
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+
+    .weather-details i {
+        font-size: 35px;
+
+    }
+}
+
+
+/*__________________________________MEdium __________________________________*/
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+
+    }
+
+    .weather-details i {
+        font-size: 55px;
+    }
+}
+
+/*__________________________________Large  __________________________________*/
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+
+    .weather-details i {
+        font-size: 65px;
+
+    }
+}
+
+/*__________________________________The End Of Media quarry __________________________________*/

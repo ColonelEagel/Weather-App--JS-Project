@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherAPP (JS) project</title>
+    <!--__________________________________ rendering all elements normally  __________________________________-->
+    <!-- <link rel="stylesheet" href="css/Normaliz.css" /> -->
+    <!--__________________________________ Main css folder __________________________________-->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!--__________________________________ box icons cdn__________________________________-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!--__________________________________ scripts folder__________________________________-->
+    <script src="js/scripts.js"></script>
+  </head>
+
+  <body>
+    <!-- __________________________________ Start Header __________________________________ -->
+    <!-- <header id="header">
+      <div class="container">
+        <a href="#">
+          <img
+            src="/media/logo-background-removebg-preview.png"
+            alt="Storky app logo"
+            id="header-img"
+            width="50px"
+          />
+        </a>
+        <nav id="nav-bar">
+          <ul class="menu">
+            <li><a href="#features" class="nav-link"> Features</a></li>
+            <li><a href="#video" class="nav-link">How It Works</a></li>
+            <li><a href="#pricing" class="nav-link">Pricing</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header> -->
+    <!-- __________________________________ End Header __________________________________ -->
+
+    <!-- <section class="container form-container">
+
+      <h1 class="section-title">contact us</h1>
+      <h2>Let&apos;s Keep In touch</h2>
+      </div>
+      <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+        <label for="email">Email:</label>
+        <input name="email" id="email" type="email" class="email" placeholder="Enter your email" required />
+        <input type="submit" id="submit" value="Submit" />
+      </form>
+    </section> -->
+
+    <section id="weather-section">
+      <div class="container weather-container">
+        <div class="search-box">
+          <i class="bx bxs-map"></i>
+          <input type="text" id="search-bar" placeholder="enter location" />
+          <button
+            type="button"
+            class="bx bx-search-alt-2"
+            id="search-btn"
+          ></button>
+        </div>
+        <!-- weather box -->
+        <div class="weather-box fade-in">
+          <div class="box">
+            <div class="info-weather">
+              <div class="weather">
+                <img src="images/cloud.png" alt="cloud image" />
+                <!-- <h3 class="temp">15°C</h3>
+                <h1 class="city">London</h1>
+                <p class="condition">Cloudy</p> -->
+                <p class="temperature">
+                  <span class="temp-value">15</span>
+                  <span class="temp-unit">°C</span>
+                </p>
+                <!-- <p class="condition">Cloudy</p>
+                <p class="city">London</p> -->
+                <p class="description">broken clouds</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="weather-details fade-in">
+          <div class="humidity">
+            <i class="bx bx-water"></i>
+            <div class="text">
+              <span id="info-humidity">50%</span>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="wind">
+            <i class="bx bx-wind"></i>
+            <div class="text">
+              <span id="info-wind">0Km/h</span>
+              <p>wind Speed</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="not-found fade-in">
+          <img src="images/404.png" alt="404 image" />
+          <p>City Not Found</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <p>&copy; 2024 <span>Storky</span> All Rights Reserved</p>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
